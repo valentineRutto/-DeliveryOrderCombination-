@@ -9,17 +9,14 @@ public class OrderCombination {
 
     private final UserInput input;
     private ArrayList<OrderModel> list;
+    protected String[] places = {};
 
-    /**
-     * Constructor
-     */
+
     public OrderCombination() {
         input = new UserInput();
     }
 
-    /**
-     * Initiate processing
-     */
+
     public void processCombination() {
         list = getOrders();
         list.stream().forEach((order) -> {
@@ -27,6 +24,7 @@ public class OrderCombination {
         });
         String[] centers =getLocations();
         System.out.println("Similar Orders");
+        //getting delivery orders
         for (String place : centers) {
 
             System.out.println("\n" + place + "\n");
@@ -54,9 +52,8 @@ public class OrderCombination {
     public ArrayList<OrderModel> getOrders() {
         return input.getInputs();
     }
-    protected String[] places = {};
 
-
+//processing the locations
     protected void setLocations(OrderModel order) {
         pushLocation(order.getPickLocation());
         pushLocation(order.getDropLocation());
