@@ -9,10 +9,10 @@ public class OrderModel {
     private String dropOffLocation;
 
 
-    public OrderModel(String the_name, String pick_at, String drop_at) {
+    public OrderModel(String the_name, String pickup_at, String dropoff_at) {
         this.name = the_name;
-        this.pickUpLocation = pick_at;
-        this.dropOffLocation = drop_at;
+        this.pickUpLocation = pickup_at;
+        this.dropOffLocation = dropoff_at;
     }
 
     public String getName() {
