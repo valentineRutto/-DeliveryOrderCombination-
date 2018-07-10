@@ -8,15 +8,22 @@ public class Main {
 
     public static void main(String[] args) {
 
-//        String[] elements = {String.valueOf('A'), String.valueOf('B'), String.valueOf('C'), String.valueOf('D'),String.valueOf('F'), String.valueOf('H')};
 
         Scanner s = new Scanner(System.in);
         String[] elements= new String[5];
 
-        System.out.println("Please enter 5 order location: ");
+        System.out.println("Please enter 5 order pick up location: ");
 
         for (int i = 0; i < elements.length; i++) {
             elements[i] = s.nextLine();
+        }
+
+        String[] Droploc= new String[5];
+
+        System.out.println("Please enter 5 order Drop up location: ");
+
+        for (int i = 0; i < elements.length; i++) {
+            Droploc[i] = s.nextLine();
         }
 
 //        System.out.print("Enter order size : ");
@@ -45,8 +52,10 @@ public class Main {
 //        }
 
 
-
+        System.out.println("PickUp location combination: ");
         combination(elements,2);
+        System.out.println("Dropoff location combination: ");
+        combination(Droploc,2);
 
     }
 }
