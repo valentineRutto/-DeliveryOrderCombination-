@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/sendydelivery.iml" filepath="$PROJECT_DIR$/sendydelivery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sendy.iml" filepath="$PROJECT_DIR$/sendy.iml" />
     </modules>
   </component>
 </project>

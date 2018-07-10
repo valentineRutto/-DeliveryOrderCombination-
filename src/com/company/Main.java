@@ -1,4 +1,6 @@
-package com.company;
+package com.company;gi
+
+import java.util.Scanner;
 
 import static com.company.Combination.combination;
 
@@ -6,12 +8,21 @@ public class Main {
 
     public static void main(String[] args) {
 
-//        OrderCombination combination = new OrderCombination();
-//        combination.processCombination();
+//        String[] elements = {String.valueOf('A'), String.valueOf('B'), String.valueOf('C'), String.valueOf('D'),String.valueOf('F'), String.valueOf('H')};
 
+        Scanner s = new Scanner(System.in);
+        String[] elements= new String[5];
 
-        Object[] elements = new Object[] {'A','B','C','D','E', 'F', 'G', 'H'};
+        System.out.println("Please enter 20 names to sort");
 
-        combination(elements,7);
+        for (int i = 0; i < elements.length; i++) {
+            elements[i] = s.nextLine();
+        }
+
+        //Just to test
+        System.out.println(elements[0]);
+
+        combination(elements,3);
+
     }
 }
