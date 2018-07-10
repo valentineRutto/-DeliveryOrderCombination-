@@ -2,7 +2,7 @@ package com.company;
 
 public class Combination {
 
-        public static void combination(String[]  elements, int K){
+        public static void combination(String[] elements, int K){
 
             // get the length of the array
             // e.g. for {'A','B','C','D'} => N = 4
